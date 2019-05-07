@@ -1,0 +1,24 @@
+{
+    "type": "object",
+    "properties": {
+        "subscriptionId": {
+            "required": true,
+            "type": "string"
+        },
+        "requestBody": {
+            "description": "Location of gallery item payload.",
+            "properties": {
+                "galleryItemUri": {
+                    "description": "URI for your gallery package that has already been uploaded online.",
+                    "type": "string"
+                }
+            },
+            "type": "object"
+        },
+        "api_version": {
+            "required": true,
+            "type": "string",
+            "default": "2016-05-01"
+        }
+    }
+}
